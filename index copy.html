@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="/CSS/index.css">
+    <script src="/JS/cod.js" defer></script>
+    <link rel="icon" href="/imagens/favicon-32x32.png">
+
+
+    <title>UCS Green | Home</title>
+</head>
+
+<body>
+
+
+
+    <!--INICIO Popup Cookie-->
+    <div id="cookie-popup" class="cookie-popup">
+        <p>Este site utiliza cookies para melhorar a sua experiência. Ao continuar navegando, você concorda com o uso de cookies.</p>
+        <button id="accept-cookie">Aceitar</button>
+    </div>
+
+
+    <script>
+        window.onload = function() {
+            var popup = document.getElementById('cookie-popup');
+            var acceptButton = document.getElementById('accept-cookie');
+
+            acceptButton.addEventListener('click', function() {
+                popup.style.display = 'none';
+
+            });
+
+
+            var cookieAccepted = localStorage.getItem('cookieAccepted');
+            if (!cookieAccepted) {
+                popup.style.display = 'block';
+            }
+        };
+    </script>
+
+    <!--FINAL Popup Cookie-->
+
+
+
+    <!--INICIO Chatbot-->
+    <button class="chatbot-toggler">
+        <span class="material-symbols-outlined">mode_comment</span> 
+        <span class="material-symbols-outlined">close</span>
+    </button>
+
+    <div class="chatbot">
+        <header>
+            <h2>Assistente Virtual</h2>
+            <span class="close-btn material-symbols-outlined">close</span>
+        </header>
+
+        <ul class="chatbox">
+            <li class="chat incoming">
+                <span class="material-symbols-outlined">smart_toy</span>
+                <p>Olá 👋</br> Como posso ajudar hoje?</p>
+            </li>
+        </ul>
+
+        <div class="chat-input">
+            <textarea placeholder="Digite uma mensagem..." required></textarea>
+            <span id="send-btn" class="material-symbols-outlined">send</span>
+        </div>
+    </div>
+
+    <!--FINAL Chatbot-->
+
+    <section id="home">
+        <!--INICIO Section Home-->
+
+        <div class="content-home">
+            <!--Inicio Conteúdo Menu Superior-->
+
+            <div class="box_menu">
+                <!--Inicio Menu Lateral-->
+                <input type="checkbox" id="check">
+                <div class="menu-icon">
+                    <label for="check">
+                      <i class="fas fa-bars" style="align-items:center;color: white; font-size: 4vh; font-weight: 700; position: absolute; left: 16px; line-height: 60px; cursor: pointer;margin-top: 3.0vh;margin-left: 3vh;"></i>
+                    </label>
+                </div>
+
+                <div class="sidebar_menu">
+                    <div class="sidebar_titulo">
+                        <a href="#">Painel de Controle</a>
+                    </div>
+                    <div class="btn_close">
+                        <label for="check">
+                          <i class="fas fa-times" style="cursor:pointer;color:white;font-size: 25px; line-height: 60px; position: absolute; left: 240px;margin-top: 2vh;"></i>
+                        </label>
+                    </div>
+                    <nav class="menu" style="display: flex; align-items: center; justify-content: center;">
+                        <ul>
+                            <li>
+                                <i class="fas fa-list" style="color: white; font-size: 20px; padding-right: 8px;"></i>
+                                <a href="#amazonia-desafios" style="color: white; font-size: 20px;">Categorias</a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-shield-halved" style="color: white; font-size: 20px; padding-right: 8px;"></i>
+                                <a href="#amazonia-reportagem" style="color: white; font-size: 20px;">Ameaças</a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-users" style="color: white; font-size: 20px; padding-right: 8px;"></i>
+                                <a href="#parceiros" style="color: white; font-size: 20px;">Parceiros</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-chart-pie" style="color: white; font-size: 20px; padding-right: 8px;"></i>
+                                <a href="#dashboard" style="color: white; font-size: 20px;">Dashboard</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-paperclip" style="color: white; font-size: 20px; padding-right: 8px;"></i>
+                                <a href="/HTML/datasets.html" target="_blank" style="color: white; font-size: 20px;">Datasets</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone" style="color: white; font-size: 20px; padding-right: 8px;"></i>
+                                <a href="#contato" style="color: white; font-size: 20px;">Contato</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!--Final Menu Lateral-->
+                <div class="content-up-nav">
+                    <a href="/HTML/index.html"><img src="/imagens/logo-main.png"></a>
+                </div>
+            </div>
+            <!--Final Conteúdo Menu Superior-->
+
+
+    </section>
+    <!--FINAL Section Home-->
+
+
+    <section id="faixa-intro">
+        <!--INICIO Section Faixa Introdução-->
+        <div class="img-intro">
+            <img src="/imagens/faixa-intro.webp">
+        </div>
+
+    </section>
+    <!--FINAL Section Faixa Introdução-->
+
+
+    <section id="amazonia-intro">
+        <!--INICIO Section Introdução-->
+
+        <div class="content-box-intro">
+
+            <div class="image-intro">
+                <img src="/imagens/img-main.webp">
+            </div>
+
+            <div class="text-box-intro">
+
+                <div class="title-intro">
+                    <h2>Amazônia</h2>
+                    <h1>Biodiversidade Exuberante,<br> Desafios Urgentes</h1>
+                    <img src="/imagens/faixa-separa-intro.png">
+                </div>
+
+                <div class="media-boxs-intro">
+
+                    <div class="mini-box-intro">
+                        <div class="mini-box-intro-img1">
+                            <img src="/imagens/materias-intro-1.webp">
+                        </div>
+                        <div class="mini-box-intro-text">
+                            <h1>Explorando a Diversidade em uma<br> Terra de Maravilhas Naturais</h1>
+                            <p>A Amazônia abriga uma das
+                                <br>biodiversidades mais ricas do mundo, com
+                                <br>uma variedade de biomas interligados.</p>
+                        </div>
+                    </div>
+
+                    <div class="space-bet-boxs">
+                        <p></p>
+                    </div>
+
+                    <div class="mini-box-intro">
+                        <div class="mini-box-intro-text">
+                            <h1>Maravilhas Vivas: A Fauna <br> Intrincada da Amazônia</h1>
+                            <p>A fauna é formada de diversidade e adaptação,
+                                <br>com espécies que evoluíram em ruma
+                                <br>variedade de habitats únicos.</p>
+                        </div>
+                        <div class="mini-box-intro-img2">
+                            <img src="/imagens/materias-intro-2.webp">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!--Final Section Introdução-->
+
+
+    <section id="amazonia-desafios">
+        <!--INICIAL Section Faixa Desafios-->
+        <div class="content-amazonia-desafios">
+
+            <div class="text-amazonia-desafios">
+                <h1>Pulsante Coração da Terra sob Ameaça</h1>
+                <h2>Desafios e Ameaças que precisamos Enfrentar</h2>
+            </div>
+
+            <div class="content-boxs-medias-amazonia-desafios">
+
+                <div class="box-shape-amazonia-desafios">
+
+                    <div class="img-box-amazonia-desafios">
+                        <img src="/imagens/desafios-incendios.png">
+                    </div>
+                    <div class="text-box-amazonia-desafios">
+                        <h3>Incêndios Florestais</h3>
+                        <p>Além de comprometer a rica vida selvagem,
+                            <br>os incêndios na Amazônia também têm
+                            <br>implicações de longo alcance para o clima
+                            <br>global.</p>
+                        <div class="btn-saiba-mais">
+                            <a href="/HTML/materia-incendios.html" class="saiba-mais" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-shape-amazonia-desafios">
+
+                    <div class="img-box-amazonia-desafios">
+                        <img src="/imagens/desafios-desmatamento.webp">
+                    </div>
+                    <div class="text-box-amazonia-desafios">
+                        <h3>Desmatamento</h3>
+                        <p>Além de comprometer a rica vida selvagem,
+                            <br>o desmatamento na Amazônia também têm
+                            <br>implicações de longo alcance para o clima
+                            <br>global.</p>
+
+                        <div class="btn-saiba-mais">
+                            <a href="/HTML/materia-desmatamento.html" class="saiba-mais" target="_blank">Saiba Mais</a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="box-shape-amazonia-desafios">
+
+                    <div class="img-box-amazonia-desafios">
+                        <img src="/imagens/desafios-seca.webp">
+                    </div>
+                    <div class="text-box-amazonia-desafios">
+                        <h3>Secas</h3>
+                        <p>Além de comprometer a rica vida selvagem,
+                            <br>a seca na Amazônia também têm
+                            <br>implicações de longo alcance para o clima
+                            <br>global.</p>
+                        <div class="btn-saiba-mais">
+                            <a href="/HTML/materia-seca.html" class="saiba-mais" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+    <!--FINAL Section Desafios-->
+
+
+    <section id="amazonia-reportagem">
+        <!--INICIO Section Faixa Reportagem-->
+
+        <div class="content-box-reportagem">
+
+            <div class="content-up-reportagem">
+
+                <div class="text-reportagem">
+                    <h2>Sobrevivendo às Ameaças</h2>
+                    <h1>A Luta do Povo Yanomami</h1>
+                    <p>O coração da Amazônia, o povo Yanomami enfrenta
+                        <br>uma batalha pela sobrevivência contra garimpeiros
+                        <br>que invadem suas terras em busca de minerais,
+                        <br>trazendo doenças fatais e degradação ambiental.
+                        <br>Com apoio de grupos indígenas e defensores dos
+                        <br>direitos humanos, eles buscam proteger suas
+                        <br>tradições e territórios, mas enfrentam desafios em
+                        <br>equilibrar sua cultura ancestral com as demandas da
+                        <br>modernidade.
+                        <br>
+                        <br>A resiliência dos Yanomami é evidente em sua
+                        <br>determinação em preservar rituais e laços com a
+                        <br>terra, destacando a importância crucial de proteger
+                        <br>a diversidade cultural e os direitos dos povos
+                        <br>indígenas globalmente.</p>
+                </div>
+                <iframe width="760" height="515" src="https://www.youtube.com/embed/R2P48yHGY-8?si=yOCWMqua_MGat3UX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+
+
+        </div>
+        </div>
+
+    </section>
+    <!--FINAL Section Reportagem-->
+
+
+    <section id="parceiros">
+        <!--INICIO Parceiros -->
+        <div class="content-parceiros">
+            <div class="title-parceiros">
+                <h1>Parceiros na luta contra o desmatamento</h1>
+                <h2>O Papel Crucial na Preservação das Florestas </h2>
+            </div>
+            <div class="logos-parceiros">
+                <a href="https://www.socioambiental.org/" target="_blank"><img src="/imagens/isa.webp"></a>
+                <a href="https://fas-amazonia.org/" target="_blank"><img src="/imagens/fas.webp"></a>
+                <a href="https://sosamazonia.org.br/" target="_blank"><img src="/imagens/sos.webp"></a>
+                <a href="https://bmv.global/" target="_blank"><img src="/imagens/bmv.webp"></a>
+                <a href="http://ecam.org.br/" target="_blank"><img src="/imagens/ecam.webp"></a>
+            </div>
+        </div>
+    </section>
+    <!--FINAL Parceiros -->
+
+    <section id="dashboard">
+        <!--INICIO Dashboard -->
+
+        <div class="content-dashboard">
+
+            <div class="text-dashboard">
+                <h2>Tecnologia</h2>
+                <h1>Dashboard para<br>monitoramento e análise</h1>
+                <img src="/imagens/img-main-dashboard.webp">
+
+
+            </div>
+
+            <div class="boxs-faq">
+
+                <div class="faq-container">
+                    <div class="question">
+                        O que é um dashboard?
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="answer">
+                        Um dashboard é um painel de interface gráfica utilizado para visualizações de dados.
+                    </div>
+                </div>
+
+                <div class="faq-container">
+                    <div class="question">
+                        Para que serve um Dashboard?
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="answer">
+                        Um dashboard permite visualizar e compreender dados de maneira eficaz, auxiliando na tomada de decisões.
+                    </div>
+                </div>
+
+                <div class="faq-container">
+                    <div class="question">
+                        O que você encontrará no nosso Dashboard?
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="answer">
+                        Através de gráficos e métricas, você terá acesso a dados sobre o desmatamento na Amazônia e análises de correlação com o desmatamento em Terras Indígenas.
+                    </div>
+                </div>
+
+                <div class="faq-container">
+                    <div class="question">
+                        Como acessar nosso Dashboard?
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="answer">
+                        Para acessar nosso Dashboard basta apertar no botão abaixo em "Acessar Dashboard" e fazer o login com as informações necessárias.
+                    </div>
+                </div>
+
+                <div class="faq-container">
+                    <div class="question">
+                        Quais são nossas fontes de dados ?
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="answer">
+                        As análises e correlações do Dashboard foram realizadas pela nossa equipe com dados retirados da plataforma do TerraBrasilis. <a href="/HTML/datasets.html" target="_blank">Acessar datasets</a>
+                    </div>
+                </div>
+                <div class="btn-dashboard">
+                    <a href="/HTML/login.html" target="_blank"><button>Acessar Dashboard</button></a>
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+            const questions = document.querySelectorAll('.question');
+            questions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const answer = question.nextElementSibling;
+                    const icon = question.querySelector('.icon');
+                    if (answer.style.display === 'none') {
+                        answer.style.display = 'block';
+                        icon.textContent = '-';
+                    } else {
+                        answer.style.display = 'none';
+                        icon.textContent = '+';
+                    }
+                });
+            });
+        </script>
+
+    </section>
+    <!--FINAL Dashboard -->
+
+
+    <section id="sobre-nos">
+        <!--INICIO Section Sobre Nos-->
+
+        <div class="box-sobre-nos">
+            <div class="content-sobre-nos">
+                <img src="/imagens/unisantos-entrada.webp">
+                <div class="text-sobre-nos">
+                    <h2>Sobre nós</h2>
+                    <h1>Conheça a Nossa Equipe</h1>
+                    <p>Como estudantes universitários, unimos forças para criar
+                        <br>este site com a finalidade de apresentar a Amazônia, sua
+                        <br>biodiversidade incrível e, ao mesmo tempo, examinar as
+                        <br>estatísticas alarmantes de desmatamento na região. Nosso
+                        <br>trabalho é uma parte essencial de um projeto acadêmico
+                        <br>na Universidade Católica de Santos, onde buscamos
+                        <br>ampliar o entendimento sobre a Amazônia e seu papel no
+                        <br>contexto global.
+                        <br>
+                        <br>A Amazônia é uma maravilha natural que merece nossa
+                        <br>atenção e proteção. Junte-se a nós nesta jornada de
+                        <br>descoberta e reflexão. Explore nosso site e saiba mais sobre
+                        <br>esse tesouro da biodiversidade, bem como os desafios que a
+                        <br>Amazônia enfrenta. Seja parte da mudança e ajude a
+                        <br>conservar a Amazônia para as futuras gerações.</p>
+                    <a href="/HTML/integrantes.html" target="_blank">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--FINAL Section Sobre Nos-->
+
+
+    <section id="contato">
+        <!--INICIO Section Contato-->
+
+
+        <div class="container">
+            <div class="text-section">
+                <h3>Contato</h3>
+                <h2>Entre em Contato</h2>
+                <p>Se você tem alguma pergunta, sugestão ou simplesmente quer compartilhar suas ideias, ficaremos felizes em ouvir você. </p>
+
+                <div class="form-section">
+                    <form action="/submit_form" method="post">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Insira um endereço de e-mail válido" required>
+
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" required></textarea>
+
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
+            </div>
+            <div class="image-section">
+                <img src="/imagens/contato-photo.webp">
+            </div>
+        </div>
+
+
+    </section>
+
+    <!--FINAL Section Contato-->
+
+    <section id="footer" class="footer">
+        <!--INICIO Section Footer-->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="/imagens/logo-main.png" alt="Logo" class="logo-img">
+                </div>
+            </div>
+
+            <hr class="footer-line">
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2023 UNISANTOS. All rights reserved.</p>
+                <div class="footer-policy">
+                    <a href="/HTML/integrantes.html" target="_blank">
+                        <p>Sobre nós</p>
+                    </a>
+                    <a href="/HTML/termo-privacidade.html" target="_blank">
+                        <p>Termos de Privacidade</p>
+                    </a>
+                    <a href="" target="_blank">
+                        <p>Política de Cookies</p>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+
+    </section>
+    <!--FINAL Section Footer-->
+
+
+
+
+
+</body>
+
+</html>
