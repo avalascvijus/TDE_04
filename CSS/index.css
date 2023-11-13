@@ -313,7 +313,7 @@ body {
 /*INICIO Section Home*/
 
 #home {
-    background-image: url('/imagens/background.png');
+    background-image: url('/imagens/background.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -323,7 +323,7 @@ body {
 
 @media only screen and (max-width: 768px) {
     #home {
-        background-image: url('/imagens/background-mobile.png');
+        background-image: url('/imagens/background-mobile.webp');
     }
 }
 
