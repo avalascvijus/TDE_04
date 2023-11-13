@@ -4,49 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Pré-carregar recursos chave -->
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" as="style">
-    <link rel="preload"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-        as="style">
-
-    <!-- Incorporar CSS crítico -->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-        body {
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-            font-family: 'Poppins', sans-serif;
-        }
-    </style>
-
-    <!-- Carregamento assíncrono do CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
-        media="print" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
-    </noscript>
-
-    <!-- Removido a versão JS do Font Awesome para evitar carregamento duplicado -->
-    <!-- Se precisar usar a versão JS por algum motivo específico, mantenha-a e remova a versão CSS em vez disso -->
-
-    <!-- Carregamento assíncrono de CSS não crítico -->
-    <link rel="stylesheet" href="/CSS/index.css" media="print" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="/CSS/index.css">
-    </noscript>
-
-    <!-- Diferir JavaScript -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="/CSS/index.css">
     <script src="/JS/cod.js" defer></script>
-
-    <!-- Favicon e título do site -->
     <link rel="icon" href="/imagens/favicon-32x32.png">
+
+
     <title>UCS Green | Home</title>
 </head>
-
 
 <body>
 
@@ -54,18 +21,17 @@
 
     <!--INICIO Popup Cookie-->
     <div id="cookie-popup" class="cookie-popup">
-        <p>Este site utiliza cookies para melhorar a sua experiência. Ao continuar navegando, você concorda com o uso de
-            cookies.</p>
+        <p>Este site utiliza cookies para melhorar a sua experiência. Ao continuar navegando, você concorda com o uso de cookies.</p>
         <button id="accept-cookie">Aceitar</button>
     </div>
 
 
     <script>
-        window.onload = function () {
+        window.onload = function() {
             var popup = document.getElementById('cookie-popup');
             var acceptButton = document.getElementById('accept-cookie');
 
-            acceptButton.addEventListener('click', function () {
+            acceptButton.addEventListener('click', function() {
                 popup.style.display = 'none';
 
             });
@@ -84,7 +50,7 @@
 
     <!--INICIO Chatbot-->
     <button class="chatbot-toggler">
-        <span class="material-symbols-outlined">mode_comment</span>
+        <span class="material-symbols-outlined">mode_comment</span> 
         <span class="material-symbols-outlined">close</span>
     </button>
 
@@ -120,8 +86,7 @@
                 <input type="checkbox" id="check">
                 <div class="menu-icon">
                     <label for="check">
-                        <i class="fas fa-bars"
-                            style="align-items:center;color: white; font-size: 4vh; font-weight: 700; position: absolute; left: 16px; line-height: 60px; cursor: pointer;margin-top: 3.0vh;margin-left: 3vh;"></i>
+                      <i class="fas fa-bars" style="align-items:center;color: white; font-size: 4vh; font-weight: 700; position: absolute; left: 16px; line-height: 60px; cursor: pointer;margin-top: 3.0vh;margin-left: 3vh;"></i>
                     </label>
                 </div>
 
@@ -131,8 +96,7 @@
                     </div>
                     <div class="btn_close">
                         <label for="check">
-                            <i class="fas fa-times"
-                                style="cursor:pointer;color:white;font-size: 25px; line-height: 60px; position: absolute; left: 240px;margin-top: 2vh;"></i>
+                          <i class="fas fa-times" style="cursor:pointer;color:white;font-size: 25px; line-height: 60px; position: absolute; left: 240px;margin-top: 2vh;"></i>
                         </label>
                     </div>
                     <nav class="menu" style="display: flex; align-items: center; justify-content: center;">
@@ -142,25 +106,20 @@
                                 <a href="#amazonia-desafios" style="color: white; font-size: 20px;">Categorias</a>
                             </li>
                             <li>
-                                <i class="fa-solid fa-shield-halved"
-                                    style="color: white; font-size: 20px; padding-right: 8px;"></i>
+                                <i class="fa-solid fa-shield-halved" style="color: white; font-size: 20px; padding-right: 8px;"></i>
                                 <a href="#amazonia-reportagem" style="color: white; font-size: 20px;">Ameaças</a>
                             </li>
                             <li>
-                                <i class="fa-solid fa-users"
-                                    style="color: white; font-size: 20px; padding-right: 8px;"></i>
+                                <i class="fa-solid fa-users" style="color: white; font-size: 20px; padding-right: 8px;"></i>
                                 <a href="#parceiros" style="color: white; font-size: 20px;">Parceiros</a>
                             </li>
                             <li>
-                                <i class="fas fa-chart-pie"
-                                    style="color: white; font-size: 20px; padding-right: 8px;"></i>
+                                <i class="fas fa-chart-pie" style="color: white; font-size: 20px; padding-right: 8px;"></i>
                                 <a href="#dashboard" style="color: white; font-size: 20px;">Dashboard</a>
                             </li>
                             <li>
-                                <i class="fas fa-paperclip"
-                                    style="color: white; font-size: 20px; padding-right: 8px;"></i>
-                                <a href="/HTML/datasets.html" target="_blank"
-                                    style="color: white; font-size: 20px;">Datasets</a>
+                                <i class="fas fa-paperclip" style="color: white; font-size: 20px; padding-right: 8px;"></i>
+                                <a href="/HTML/datasets.html" target="_blank" style="color: white; font-size: 20px;">Datasets</a>
                             </li>
                             <li>
                                 <i class="fas fa-phone" style="color: white; font-size: 20px; padding-right: 8px;"></i>
@@ -218,8 +177,7 @@
                             <h1>Explorando a Diversidade em uma<br> Terra de Maravilhas Naturais</h1>
                             <p>A Amazônia abriga uma das
                                 <br>biodiversidades mais ricas do mundo, com
-                                <br>uma variedade de biomas interligados.
-                            </p>
+                                <br>uma variedade de biomas interligados.</p>
                         </div>
                     </div>
 
@@ -232,8 +190,7 @@
                             <h1>Maravilhas Vivas: A Fauna <br> Intrincada da Amazônia</h1>
                             <p>A fauna é formada de diversidade e adaptação,
                                 <br>com espécies que evoluíram em ruma
-                                <br>variedade de habitats únicos.
-                            </p>
+                                <br>variedade de habitats únicos.</p>
                         </div>
                         <div class="mini-box-intro-img2">
                             <img src="/imagens/materias-intro-2.webp">
@@ -270,8 +227,7 @@
                         <p>Além de comprometer a rica vida selvagem,
                             <br>os incêndios na Amazônia também têm
                             <br>implicações de longo alcance para o clima
-                            <br>global.
-                        </p>
+                            <br>global.</p>
                         <div class="btn-saiba-mais">
                             <a href="/HTML/materia-incendios.html" class="saiba-mais" target="_blank">Saiba Mais</a>
                         </div>
@@ -288,8 +244,7 @@
                         <p>Além de comprometer a rica vida selvagem,
                             <br>o desmatamento na Amazônia também têm
                             <br>implicações de longo alcance para o clima
-                            <br>global.
-                        </p>
+                            <br>global.</p>
 
                         <div class="btn-saiba-mais">
                             <a href="/HTML/materia-desmatamento.html" class="saiba-mais" target="_blank">Saiba Mais</a>
@@ -309,8 +264,7 @@
                         <p>Além de comprometer a rica vida selvagem,
                             <br>a seca na Amazônia também têm
                             <br>implicações de longo alcance para o clima
-                            <br>global.
-                        </p>
+                            <br>global.</p>
                         <div class="btn-saiba-mais">
                             <a href="/HTML/materia-seca.html" class="saiba-mais" target="_blank">Saiba Mais</a>
                         </div>
@@ -349,12 +303,9 @@
                         <br>determinação em preservar rituais e laços com a
                         <br>terra, destacando a importância crucial de proteger
                         <br>a diversidade cultural e os direitos dos povos
-                        <br>indígenas globalmente.
-                    </p>
+                        <br>indígenas globalmente.</p>
                 </div>
-                <iframe width="760" height="515" src="https://www.youtube.com/embed/R2P48yHGY-8?si=yOCWMqua_MGat3UX"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                <iframe width="760" height="515" src="https://www.youtube.com/embed/R2P48yHGY-8?si=yOCWMqua_MGat3UX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
             </div>
 
@@ -415,8 +366,7 @@
                         <span class="icon">+</span>
                     </div>
                     <div class="answer">
-                        Um dashboard permite visualizar e compreender dados de maneira eficaz, auxiliando na tomada de
-                        decisões.
+                        Um dashboard permite visualizar e compreender dados de maneira eficaz, auxiliando na tomada de decisões.
                     </div>
                 </div>
 
@@ -426,8 +376,7 @@
                         <span class="icon">+</span>
                     </div>
                     <div class="answer">
-                        Através de gráficos e métricas, você terá acesso a dados sobre o desmatamento na Amazônia e
-                        análises de correlação com o desmatamento em Terras Indígenas.
+                        Através de gráficos e métricas, você terá acesso a dados sobre o desmatamento na Amazônia e análises de correlação com o desmatamento em Terras Indígenas.
                     </div>
                 </div>
 
@@ -437,8 +386,7 @@
                         <span class="icon">+</span>
                     </div>
                     <div class="answer">
-                        Para acessar nosso Dashboard basta apertar no botão abaixo em "Acessar Dashboard" e fazer o
-                        login com as informações necessárias.
+                        Para acessar nosso Dashboard basta apertar no botão abaixo em "Acessar Dashboard" e fazer o login com as informações necessárias.
                     </div>
                 </div>
 
@@ -448,8 +396,7 @@
                         <span class="icon">+</span>
                     </div>
                     <div class="answer">
-                        As análises e correlações do Dashboard foram realizadas pela nossa equipe com dados retirados da
-                        plataforma do TerraBrasilis. <a href="/HTML/datasets.html" target="_blank">Acessar datasets</a>
+                        As análises e correlações do Dashboard foram realizadas pela nossa equipe com dados retirados da plataforma do TerraBrasilis. <a href="/HTML/datasets.html" target="_blank">Acessar datasets</a>
                     </div>
                 </div>
                 <div class="btn-dashboard">
@@ -503,8 +450,7 @@
                         <br>descoberta e reflexão. Explore nosso site e saiba mais sobre
                         <br>esse tesouro da biodiversidade, bem como os desafios que a
                         <br>Amazônia enfrenta. Seja parte da mudança e ajude a
-                        <br>conservar a Amazônia para as futuras gerações.
-                    </p>
+                        <br>conservar a Amazônia para as futuras gerações.</p>
                     <a href="/HTML/integrantes.html" target="_blank">Saiba Mais</a>
                 </div>
             </div>
@@ -523,8 +469,7 @@
             <div class="text-section">
                 <h3>Contato</h3>
                 <h2>Entre em Contato</h2>
-                <p>Se você tem alguma pergunta, sugestão ou simplesmente quer compartilhar suas ideias, ficaremos
-                    felizes em ouvir você. </p>
+                <p>Se você tem alguma pergunta, sugestão ou simplesmente quer compartilhar suas ideias, ficaremos felizes em ouvir você. </p>
 
                 <div class="form-section">
                     <form action="/submit_form" method="post">
@@ -532,9 +477,7 @@
                         <input type="text" id="nome" name="nome" required>
 
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email"
-                            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
-                            title="Insira um endereço de e-mail válido" required>
+                        <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Insira um endereço de e-mail válido" required>
 
                         <label for="mensagem">Mensagem</label>
                         <textarea id="mensagem" name="mensagem" required></textarea>
